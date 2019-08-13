@@ -1,0 +1,19 @@
+[package]
+name = "reqwest_test"
+version = "0.1.0"
+authors = ["yrong <yrong1997@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = "0.9.19"
+actix = "0.8.3"
+
+[[bin]]
+name = "reqwest_test"
+path = "src/reqwest.rs"
+
+[[bin]]
+name = "actor"
+path = "src/actor.rs"
