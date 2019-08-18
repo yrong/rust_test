@@ -1,5 +1,5 @@
 [package]
-name = "reqwest_test"
+name = "test"
 version = "0.1.0"
 authors = ["yrong <yrong1997@gmail.com>"]
 edition = "2018"
@@ -9,11 +9,17 @@ edition = "2018"
 [dependencies]
 reqwest = "0.9.19"
 actix = "0.8.3"
+futures = "0.1"
+tokio = "0.1"
 
 [[bin]]
-name = "reqwest_test"
+name = "reqwest"
 path = "src/reqwest.rs"
 
 [[bin]]
 name = "actor"
 path = "src/actor.rs"
+
+[[bin]]
+name = "tokio"
+path = "src/tokio.rs"
